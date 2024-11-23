@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diploma CS</title>
+    <link rel="icon" href="images/intlogo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/intlogo.png" alt="Logo" width="90" height="80" class="d-inline-block align-text-center">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-dark" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto m-auto mb-lg-0 text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" target="_blank">Applied Mathematics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" target="_blank">Principle Of Programming Language</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" target="_blank">Data Structure Using C</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" target="_blank">Principle Of Digital Electronics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" target="_blank">Operating System</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" target="_blank">Computer Hardware & Maintenance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" target="_blank">Exam Special</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <img src="images/int logo.png" alt="" height="100px">
+        </div>
+    </div>
+
+    <h4 class="text-center">𝐃𝐢𝐩𝐥𝐨𝐦𝐚 𝐈𝐧 𝐂𝐨𝐦𝐩𝐮𝐭𝐞𝐫 𝐒𝐜𝐢𝐞𝐧𝐜𝐞 𝐄𝐧𝐠𝐢𝐧𝐞𝐞𝐫𝐢𝐧𝐠</h4>
+    <h5 class="text-center">𝙶𝚁𝙾𝚄𝙿: 𝚂𝙲𝚂-𝟷 / 𝚂𝙲𝚂-𝟸</h5>
+
+    <!-- subject -->
+
+     <div class="container-fluid">
+        <div class="row">
+            <div class="row col-sm-4 p-3 text-center d-flex m-auto">
+                <img src="images/maths.jpg" alt="" class="img-fluid">
+                <a href="#" for="formFile" class="form-label">Applied Mathematics</a>
+                <input class="form-control" type="file" id="fileMathematics">
+                 <button class="btn btn-primary mt-2" onclick="handleFileUpload('fileMathematics', 'downloadMathematics')">Upload</button>
+                <a href="#" id="downloadMathematics" style="display: none;" class="btn btn-success mt-2">Download Uploaded File</a>
+            </div> 
+            <div class="row col-sm-4 p-3 text-center d-flex m-auto">
+                <img src="images/principle of pl.jpg" alt="">
+                <a href="#" for="formFile" class="form-label">Principle of Programming Language</a>
+                <input class="form-control" type="file" id="fileprogramming">
+                <button class="btn btn-primary mt-2" onclick="handleFileUpload('fileprogramming', 'downloadprogramming')">Upload</button>
+                <a href="#" id="downloadprogramming" style="display: none;" class="btn btn-success mt-2">Download Uploaded File</a>
+            </div>
+            <div class="row col-sm-4 p-3 text-center d-flex m-auto">
+                <img src="images/c.webp" alt="">
+                <a href="#" for="formFile" class="form-label">Data Structure Unsing C</a>
+                <input class="form-control" type="file" id="filecPlusPlus">
+                <button class="btn btn-primary mt-2" onclick="handleFileUpload('fileC', 'downloadC')">Upload</button>
+                <a href="#" id="downloadC" style="display: none;" class="btn btn-success mt-2">Download Uploaded File</a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="row col-sm-4 p-3 text-center d-flex m-auto">
+                <img src="images/electronics.jpg" alt="">
+                <a href="#" for="formFile" class="form-label">Principle Of Digital Electronics</a>
+                <input class="form-control" type="file" id="fileElectronics">
+                <button class="btn btn-primary mt-2" onclick="handleFileUpload('fileElectronics', 'downloadElectronics')">Upload</button>
+                <a href="#" id="downloadElectronics" style="display: none;" class="btn btn-success mt-2">Download Uploaded File</a>
+            </div>
+            <div class="row col-sm-4 p-3 text-center d-flex m-auto">
+                <img src="images/os.jpg" alt="">
+                <a href="#" for="formFile" class="form-label">Operating System</a>
+                <input class="form-control" type="file" id="fileOs">
+                <button class="btn btn-primary mt-2" onclick="handleFileUpload('fileOs', 'downloadOs')">Upload</button>
+                <a href="#" id="downloadOs" style="display: none;" class="btn btn-success mt-2">Download Uploaded File</a>
+            </div>
+            <div class="row col-sm-4 p-3 text-center d-flex m-auto">
+                <img src="images/hardware.jpg" alt="">
+                <a href="#" for="formFile" class="form-label">Computer Hardware & Maintenance</a>
+                <input class="form-control" type="file" id="fileComputer&hardware">
+                <button class="btn btn-primary mt-2" onclick="handleFileUpload('fileComputer&hardware', 'downloadComputer&hardware')">Upload</button>
+                <a href="#" id="downloadComputer&hardware" style="display: none;" class="btn btn-success mt-2">Download Uploaded File</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- exam -->
+
+    <div class="container-fluid">
+        <div class="row col-sm-4 text-center d-flex m-auto">
+                <img src="images/exam.jpg" alt="">
+                <a href="#" for="formFile" class="form-label">Examination Special</a>
+                <input class="form-control" type="file" id="fileExam">
+                <button class="btn btn-primary mt-2" onclick="handleFileUpload('fileExam', 'downloadExam')">Upload</button>
+                <a href="#" id="downloadExam" style="display: none;" class="btn btn-success mt-2">Download Uploaded File</a>
+            </div>
+            </div> 
+            <br>
+            <br>
+
+     <!-- footer -->
+     <div class="container-fluid">
+        <div class="row">
+            <footer class="bg-body-tertiary text-center">
+                <div class="container p-4 pb-0">
+                  <!-- Section: Social media -->
+                  <section class="mb-4">
+                    <a
+                    data-mdb-ripple-init
+                      class="btn text-white btn-floating m-1"
+                      style="background-color: #37579d;"
+                      href="https://www.facebook.com/mdsaqib.azad.1?mibextid=ZbWKwL"
+                      role="button"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+              
+                    <!-- whatsapp -->
+                    <a
+                      data-mdb-ripple-init
+                      class="btn text-white btn-floating m-1"
+                      style="background-color: #55ee69;"
+                      href="https://wa.me/917321819312"
+                      role="button"
+                      ><i class="fab fa-whatsapp"></i
+                    ></a>
+
+                    <!-- Instagram -->
+                    <a
+                      data-mdb-ripple-init
+                      class="btn text-white btn-floating m-1"
+                      style="background-color: #fe4545;"
+                      href="https://www.instagram.com/tkd_saqib70?igsh=MXB4bWNmN2l1Mzg1Yg=="
+                      role="button"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+              
+                    <!-- Linkedin -->
+                    <a
+                      data-mdb-ripple-init
+                      class="btn text-white btn-floating m-1"
+                      style="background-color: #006ea9;"
+                      href="https://www.linkedin.com/in/mohammad-saqib-azad-95a729288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                      role="button"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                  </section>
+                </div>
+                <div class="text-center p-3 bg-body-tertiary">
+                  <a class="text-body">Desiged By Mohd. Saqib Sheikh / Mohd. Sameer</a>
+                </div>
+              </footer>
+        </div>
+     </div>
+    
+    
+    
+    
+
+
+     <!-- JavaScript -->
+     <script>
+        function handleFileUpload(fileInputId, downloadLinkId) {
+    const fileInput = document.getElementById(fileInputId);
+    const file = fileInput.files[0];
+
+    if (!file) {
+        alert('Please select a file to upload.');
+        return;
+    }
+   
+    const blobUrl = URL.createObjectURL(file);
+    const downloadLink = document.getElementById(downloadLinkId);
+    downloadLink.href = blobUrl;
+    downloadLink.download = file.name; 
+    downloadLink.style.display = 'block';
+    fileInput.value = '';
+}
+    </script>
+
+    <!-- js link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+</html>
